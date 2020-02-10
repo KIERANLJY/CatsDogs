@@ -35,7 +35,7 @@ public class Main
 
         a = b;
 
-        a.setName(c);
+        a.setName("c");
 
         System.out.println(a);
         System.out.println(b);
