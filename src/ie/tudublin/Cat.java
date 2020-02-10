@@ -2,19 +2,24 @@ package ie.tudublin;
 
 public class Cat extends Animal
 {
-    private int numLives = 9;
-
-    public void setNumLives(int lives)
+    private int numLives;
+    public Cat(String name)
     {
-        this.numLives = lives;
+        // Constructor chaining
+        super(name);
+        setNumLives(9);
     }
-    public int getNumLives()
-    {
+
+    public int getNumLives() {
         return numLives;
+    }
+
+    public void setNumLives(int numLives) {
+        this.numLives = numLives;
     }
 
     public void speak()
     {
-        System.out.println("Meow!");
+        System.out.println("Meow");
     }
 }

@@ -5,20 +5,29 @@ public class Animal
     // Field
     private String name;
 
-    // Accessors
-    public void setName(String name)
+    // Constructor
+    // Same name as the class
+    // No return type
+    // If you don't add one, you get a default one
+    public Animal(String name)
     {
-        this.name = name;
+        setName(name);
     }
+
+    // Accessors
     public String getName()
     {
         return name;
     }
 
-    public void speak()
+    public void setName(String name)
     {
-        
+        this.name = name;
     }
 
+    public void speak()
+    {
+        System.out.println("I can't speak");
+    }
 
 }
